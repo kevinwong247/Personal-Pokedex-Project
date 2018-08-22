@@ -91,8 +91,6 @@ umbreonpromise.then(response => {
       data.stats[3].base_stat,
       abilityarray
     )
-    console.log(data.name)
-    
 });
 
 gyaradospromise.then(response => {
@@ -113,9 +111,9 @@ gyaradospromise.then(response => {
 
 
 
-document.getElementById('snorlax').addEventListener('click', function mytoggle(element) {
-    element.classList.toggle("mystyle");
-    //     let div = document.createElement('div')
+// document.getElementById('snorlax').addEventListener('click', function mytoggle(element) {
+//     element.classList.toggle("mystyle");
+//         let div = document.createElement('div')
 //     div.innerHTML = `Name: ${snorlax.name}
 //                      hp: ${snorlax.hp},
 //                      Attack: ${snorlax.attack},
@@ -123,7 +121,7 @@ document.getElementById('snorlax').addEventListener('click', function mytoggle(e
 //                      Abilities: ${snorlax.abilityarray}`
 //     let target = document.querySelector('target')
 //     target.prepend(div)
- })
+//  })
   
 
 
