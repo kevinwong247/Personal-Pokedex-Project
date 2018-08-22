@@ -109,8 +109,6 @@ gyaradospromise.then(response => {
     
 });
 
-
-
 // document.getElementById('snorlax').addEventListener('click', function mytoggle(element) {
 //     element.classList.toggle("mystyle");
 //         let div = document.createElement('div')
