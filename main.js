@@ -59,9 +59,9 @@ class Trainer {
 }
 
   
-let snorlaxpromise = axios.get("http://fizal.me/pokeapi/api/143.json")
-let umbreonpromise = axios.get("http://fizal.me/pokeapi/api/197.json")
-let gyaradospromise = axios.get("http://fizal.me/pokeapi/api/130.json")
+let snorlaxpromise = axios.get("https://fizal.me/pokeapi/api/143.json")
+let umbreonpromise = axios.get("https://fizal.me/pokeapi/api/197.json")
+let gyaradospromise = axios.get("https://fizal.me/pokeapi/api/130.json")
 
 snorlaxpromise.then(response => {
     let data = response.data
