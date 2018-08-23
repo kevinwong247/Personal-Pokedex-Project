@@ -153,6 +153,7 @@ document.getElementById("gyarados").addEventListener("click", function() {
     document.getElementById("abilities").innerHTML += gyarados.abilities[gyarados.abilities.length-1].ability.name
 });
 
-  
+
+
 
 

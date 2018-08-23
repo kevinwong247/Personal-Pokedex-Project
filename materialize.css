@@ -9229,4 +9229,11 @@ img {
 #gyarados{
   text-decoration-color: #000;
 }
+#pokedex{
+  text-decoration-color: #000;
+}
+
+.bigger-font{
+  font-size: 30px;
+}
 
