@@ -17,7 +17,7 @@ class Pokemon {
     }
 }
 
-class Kevin {
+class Trainer {
     constructor (pokemon1, pokemon2, pokemon3) {
         var ash = []
         var pokemonobject1 = {
@@ -109,18 +109,50 @@ gyaradospromise.then(response => {
     
 });
 
-// document.getElementById('snorlax').addEventListener('click', function mytoggle(element) {
-//     element.classList.toggle("mystyle");
-//         let div = document.createElement('div')
-//     div.innerHTML = `Name: ${snorlax.name}
-//                      hp: ${snorlax.hp},
-//                      Attack: ${snorlax.attack},
-//                      Defense: ${snorlax.defense}
-//                      Abilities: ${snorlax.abilityarray}`
-//     let target = document.querySelector('target')
-//     target.prepend(div)
-//  })
-  
 
+  
+document.getElementById("snorlax").addEventListener("click", function() {
+    document.getElementById("name").innerHTML = `${snorlax.name}`
+    document.getElementById("hp").innerHTML = `${snorlax.hp}`;
+    document.getElementById("attack").innerHTML= `${snorlax.attack}`;
+    document.getElementById("defense").innerHTML = `${snorlax.defense}`;
+
+    document.getElementById("abilities").innerHTML = ""
+    for (let i=0; i<snorlax.abilities.length-1; i++){
+        document.getElementById("abilities").innerHTML += `${snorlax.abilities[i].ability.name}` + ", ";
+
+    }
+    document.getElementById("abilities").innerHTML += snorlax.abilities[snorlax.abilities.length-1].ability.name
+});
+
+document.getElementById("umbreon").addEventListener("click", function() {
+    document.getElementById("name").innerHTML = `${umbreon.name}`
+    document.getElementById("hp").innerHTML = `${umbreon.hp}`;
+    document.getElementById("attack").innerHTML= `${umbreon.attack}`;
+    document.getElementById("defense").innerHTML = `${umbreon.defense}`;
+    
+    document.getElementById("abilities").innerHTML = ""
+    for (let i=0; i<umbreon.abilities.length-1; i++){
+        document.getElementById("abilities").innerHTML += `${umbreon.abilities[i].ability.name}` + ", ";
+
+    }
+    document.getElementById("abilities").innerHTML += umbreon.abilities[umbreon.abilities.length-1].ability.name
+});
+
+document.getElementById("gyarados").addEventListener("click", function() {
+    document.getElementById("name").innerHTML = `${gyarados.name}`
+    document.getElementById("hp").innerHTML = `${gyarados.hp}`;
+    document.getElementById("attack").innerHTML= `${gyarados.attack}`;
+    document.getElementById("defense").innerHTML = `${gyarados.defense}`;
+    
+    document.getElementById("abilities").innerHTML =""
+    for (let i=0; i<gyarados.abilities.length-1; i++){
+        document.getElementById("abilities").innerHTML += `${gyarados.abilities[i].ability.name}` + ", ";
+
+    }
+    document.getElementById("abilities").innerHTML += gyarados.abilities[gyarados.abilities.length-1].ability.name
+});
+
+  
 
 

@@ -9146,7 +9146,7 @@ body {
   to { background: #e74c3c; }
 }
 @keyframes shake {
-  0 { transform: translate(0, 0) rotate(0); }
+  0% { transform: translate(0, 0) rotate(0); }
   20% { transform: translate(-10px, 0) rotate(-20deg); }
   30% { transform: translate(10px, 0) rotate(20deg); }
   50% { transform: translate(-10px, 0) rotate(-10deg); }
@@ -9198,5 +9198,35 @@ img {
 
 .background {
   background-image: url("https://www.goombastomp.com/wp-content/uploads/2016/08/alola-region-e1464876207169.jpg")
+}
+
+#name{
+  color: #000;
+
+}
+
+#hp{
+  color: rgb(212, 34, 34);
+}
+
+#attack{
+  color: red; 
+}
+
+#defense{
+  color: blue;
+}
+
+#abilities{
+  color: green;
+}
+#snorlax {
+  text-decoration-color: #000;
+}
+#umbreon{
+  text-decoration-color: #000;
+}
+#gyarados{
+  text-decoration-color: #000;
 }
 
